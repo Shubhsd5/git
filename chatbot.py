@@ -2,6 +2,8 @@ from flask import Flask, render_template, request, jsonify
 from groq import Groq
 import os
 from dotenv import load_dotenv
+import pandas as pd
+import numpy as np
 load_dotenv()
 
 # Initialize Flask app
