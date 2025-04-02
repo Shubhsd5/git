@@ -13,7 +13,7 @@ app = Flask(__name__)
 api_key = os.getenv("groq_api")
 client = Groq(api_key=api_key)
 
-@app.route('/')
+@app.route('/')   
 def home():
     return render_template('index.html')
 
